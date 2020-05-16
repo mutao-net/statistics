@@ -12,3 +12,5 @@ $python fib.py 10
 $ mprof run fib.py {num}
 $ mprof plot
 ```
+例
+![26d1221c26b9c19b65426ef67c88a212](https://user-images.githubusercontent.com/35423021/82117379-83d17c00-97aa-11ea-8c93-b26a85ff733f.png)
