@@ -8,6 +8,7 @@ $python fib.py 10
 ```
 
 ### memory-profilerを使ってメモリ使用量を可視化
+https://pypi.org/project/memory-profiler/
 ```
 $ mprof run fib.py {num}
 $ mprof plot
