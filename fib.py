@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- Coding: utf-8 -*-
+import sys
 import time
 from memory_profiler import profile
 
@@ -12,11 +13,15 @@ def Fib(n):
         return Fib(n - 1)+Fib(n - 2)
 
 @profile
-def main():
+def main(num):
     start = time.time()
-    print([Fib(n) for n in range(1, 10)])
+    print([Fib(n) for n in range(1, num)])
     result_time = time.time() - start
     print ("result_time: {0}".format(result_time) + " sec")
 
 if __name__ == '__main__':
-    main()
+    args = sys.argv
+    if len(args) == 1:
+        print('please input Arguments')
+    else:
+         main(int(args[1]))
