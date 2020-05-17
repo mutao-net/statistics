@@ -5,7 +5,7 @@ import time
 from memory_profiler import profile
 
 def fizbuz(n):
-    if n % 3 == 0 and n % 5:
+    if n % 3 == 0 and n % 5 == 0:
         return str(n) + ': fizzbuzz'
     elif n % 3 == 0:
         return str(n) + ': fizz'
