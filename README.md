@@ -18,6 +18,10 @@ $ mprof plot
 
 ## fizzbuzz
 ```
+$ python fizzbuzz.py 1000001
+.
+.
+.
 999990: fizz
 999991
 999992
