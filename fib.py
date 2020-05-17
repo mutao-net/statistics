@@ -3,7 +3,9 @@
 import sys
 import time
 from memory_profiler import profile
+from functools import lru_cache
 
+@lru_cache(maxsize=None)
 def Fib(n):
     if n == 1:
         return 0
